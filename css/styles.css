@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700|Lora:400,700|Montserrat:300);
+@import url('https://fonts.cdnfonts.com/css/azonix');
+
+body{
+    background:linear-gradient(to bottom, #5460e6, #350048);
+    color:#c5e3f2;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    height:100vh;
+    overflow-y: hidden;
+    justify-content: center;
+	align-items: center;
+
+}
+#message{
+    font-family:'Monserrat'sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+#company{
+    font-family:'azonix' ;
+    font-size:5rem;
+}
+
+#firstbtn {
+	position: relative;
+    font-family:'Monserrat'sans-serif;
+	font-size:1rem;
+    top:-50%;
+	width: 300px;
+	height: 30px;
+	margin: 0;
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+    background-color: transparent;
+    border: transparent;
+}
+ #firstbtn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+#firstbtn:hover a {
+	letter-spacing: 3px;
+}
+#firstbtn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+#firstbtn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+#firstbtn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+#firstbtn:hover::before{
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+#firstbtn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+#firstbtn:hover::after{
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+#firstbtn:nth-child(1)::before, 
+#firstbtn:nth-child(1)::after {
+	background: #ff1f71;
+	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+		0 0 60px #ff1f71;
+}
+#firstbtn:nth-child(2)::before, /* 2*/
+#firstbtn:nth-child(2)::after {
+	background: #2db2ff;
+	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+		0 0 60px #2db2ff;
+}
+#firstbtn:nth-child(3)::before, /* 3*/
+#firstbtn:nth-child(3)::after {
+	background: #1eff45;
+	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
+		0 0 60px #1eff45;
+}
+
+#showTransact{
+  
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #c5e3f2;
+    box-shadow: inset 0 0 0 2px  #c5e3f2;
+    background-color: transparent;
+    height: 48px;
+  
+}
+#showTransact:hover{
+    color: #fff;
+    background-color: #5460e6;
+}
+
+#input{
+    width: 250px;
+    height: 40px;
+    border-radius:20px;
+    background:#ffffffc4;
+    outline:none;
+    border:none;
+    padding-left:1%;
+    font-size: 15px;
+
+}
+
+#transbtn{
+    margin-left:-6.1%;
+    margin-bottom: 1%;
+    height: 45px;
+    width: 90px;
+    border-radius:20px;
+    border:transparent;
+    color:#350048;
+}
+
+#transbtn:hover{
+    color: #fff;
+    background-color: #5460e6;
+}
+
+#acct{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:700;
+}
+#label{
+    font-size:1.2rem;
+}
